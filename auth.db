@@ -1,0 +1,8 @@
+CREATE DATABASE auth_db;
+USE auth_db;
+CREATE TABLE userTable (
+  Id INT AUTO_INCREMENT PRIMARY KEY, 
+  Name VARCHAR(255) NOT NULL,
+  Email VARCHAR(255) NOT NULL UNIQUE,
+  Password VARCHAR(10) NOT NULL);       //To create the table.
+SELECT * FROM userTable;                //To view all the data.
